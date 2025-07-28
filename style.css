@@ -1,0 +1,315 @@
+*{
+  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2c3e50;
+       background: linear-gradient(to bottom,#2c3e50,#99a9c0);
+  background-size: 400% 400%;
+
+     padding-top: 10px;
+
+    min-height: 100vh;
+    
+
+}
+.welcome{
+    background-color: rgba(255, 255, 255, 0.5); /* مشکی با ۵۰٪ شفافیت */
+  color: rgb(0, 0, 0); /* متن شفاف نشه */
+  padding: 30px;
+  display:grid;
+  grid-template-columns: 2fr 1fr  1fr;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: all 0.8s ease;
+  width: 98%;
+}
+.welcome:hover{
+    transform: scale(1.009);
+    box-shadow: 3px 6px 9px white;
+    color:white;
+    outline: 3px solid white
+}
+a{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    max-width: 145px;
+    margin-top: 9px;
+    color:black;
+    max-height: 40px;
+      border-radius: 10px;
+
+transition: all 0.5s ease;
+ opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+
+}
+a:hover{
+transform: scale(1.09);
+    box-shadow: 3px 6px 9px white;
+    color:white;
+}
+    
+    @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  video {
+ max-width: 700px;
+
+
+  filter: brightness(90%) saturate(120%);
+  border-radius: 20px;
+  margin:15px;
+  width: 100%;
+margin-top: 80px;
+}
+
+.information{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+    background-color: #2c3e50;
+border-radius: 20px;
+max-width: 1510px;
+width: 100%;
+margin: 20px auto;
+max-height: 600px;
+height: 600px;
+background: linear-gradient(to right, rgba(0,0,0,1), rgba(85,85,85,0.9), rgba(170,170,170,0.8), rgba(255,255,255,0.7));
+animation: gradientMove 10s ease-in-out infinite, fadeIn 1s ease-out forwards;
+box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+background-size: 200% 200%;
+background-position: 0% 50%;
+
+
+
+}
+  .hello{
+    display:inline;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 510px;
+    color:aliceblue;
+    font-size: 25px;
+    font-weight: 700;
+
+  }
+.PP{     line-height: 2;
+    background-color: rgba(255, 255, 255, 0.8); /* سفید شفاف‌تر */
+  background: linear-gradient(to right, #ff512f, #dd2476, #ff512f);
+
+
+  
+    color: black;
+    padding: 25px 30px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    background-size: 200% 200%;
+background-position: 0% 50%;
+
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+   height: auto;
+  max-height: none;
+    animation: gradientMove 5s ease infinite, fadeIn 1s ease-out forwards;
+   margin:15px;
+  opacity: 0;
+}
+.PP:hover{
+   transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    color: #ecf0f1;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+.fab{
+font-size: 40px;
+
+}
+
+.h22{
+  font-size: 30px;
+ font-weight: 800;
+ margin: 0 auto;
+
+ 
+}
+.link{
+  color:black;
+   margin-right:50px;
+color: rgb(5, 208, 208);
+}
+.link2{
+  background-color: #ecf0f1;
+  background: linear-gradient(to bottom, #000000, #131313, #656363, #bcb8b8);
+margin:7px;
+  height: 200px;
+  background-size: 200% 200%;
+  border-radius: 10px;
+background-position: 0% 50%;
+
+}
+@media screen and (max-width:900px){
+ 
+  .welcome{
+   max-width:700px;
+   margin:0 auto;
+   
+grid-template-columns:1fr;
+    grid-auto-flow: column;
+  }
+a{
+  margin-top: 19px;
+  margin-left: 18px;
+}.PP{
+  width: auto;
+overflow: auto;
+}
+video{
+  width: 450px;
+ 
+  margin-top: 140px;
+}
+.link2{
+  height: 210px;;
+}
+.h22{
+  font-size: 32px;
+}
+.fab{
+  font-size: 32px;
+}
+
+}
+@media screen and (max-width:430px){
+  .welcome{
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    max-height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 110px;
+    padding: 0px;
+  }
+  .hello{
+    max-width: 400px;
+    text-align: center;
+    margin-left:0px;
+    margin-top: 3px;
+  }
+  .aaa{
+  text-align: center;
+  margin-left: 100px;
+  
+  }
+  video{
+    max-width: 300px;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  .PP{
+    max-height: 400px;
+  }
+
+  .information{
+    max-height: 400px;
+    
+    margin-left: 85px;
+    display: flex;
+    flex-direction: column;
+  }
+  .h22{
+    font-size: 17px;
+    margin-left: 0px;
+
+  }
+  .fab{
+    font-size:17px;
+  }
+  .link2{
+    height: 250px;
+    width: 500px;
+    
+    
+    gap:30px;
+    margin-left: 30px;
+  }
+}
+#preloader {
+  position: fixed;
+    top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+background: linear-gradient(135deg, #ff9a00, #ff6ec4, #ffe53b);
+  background-size: 300% 300%;
+  animation: gradientDance 6s ease infinite;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #fff;
+  border-top-color: #ff6ec4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+#preloader p {
+  font-size: 1.2rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+
+#main-content {
+  display: none; /* تا وقتی لودینگ فعاله، سایت مخفی بمونه */
+}
+@keyframes gradientDance {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
